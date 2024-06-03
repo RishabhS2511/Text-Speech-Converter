@@ -1,8 +1,8 @@
-#Text to Speech and Speech to Text Converter
+# Text to Speech and Speech to Text Converter
 
 This project is a web-based application that provides two main functionalities: converting text to speech and converting speech to text. The user interface includes a smooth, animated transition between the two functionalities, allowing users to easily switch between them. The application supports multiple languages for both text-to-speech and speech-to-text conversion.
 
-Features
+# Features
 
 - Text to Speech: Convert any written text to audible speech using available voices.
 - Speech to Text: Convert spoken words to written text with support for multiple languages.
@@ -10,13 +10,13 @@ Features
 - Language Support: Support for multiple languages including Indian languages and Hinglish.
 - Voice Selection: Allows users to select different voices for text-to-speech conversion.
 
-Technologies Used
+# Technologies Used
 - HTML
 - CSS
 - JavaScript
 - Web Speech API (for both SpeechSynthesis and SpeechRecognition)
 
-Usage
+# Usage
 
 Text to Speech
 
@@ -31,8 +31,8 @@ Speech to Text
 - Click the "Stop" button to end the speech recognition.
 - The recognized text will appear in the textarea.
 
-JavaScript Logic
+# JavaScript Logic
 
-Text to Speech:- The 'SpeechSynthesisUtterance' object is used to convert text to speech.
-Speech to Text:- The 'SpeechRecognition' object is used to convert speech to text.
-Language Support:- The 'recognition.lang' property is set based on user selection to support multiple languages for speech recognition.
+- Text to Speech:- The 'SpeechSynthesisUtterance' object is used to convert text to speech.
+- Speech to Text:- The 'SpeechRecognition' object is used to convert speech to text.
+- Language Support:- The 'recognition.lang' property is set based on user selection to support multiple languages for speech recognition.
