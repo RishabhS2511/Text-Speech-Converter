@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Speech Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="text-to-speech">
+                <h1>Text to Speech</h1>
+                <select id="voiceSelect"></select>
+                <textarea id="textToSpeechInput" placeholder="Write something..."></textarea>
+                <button id="textToSpeechButton">TEXT TO SPEECH</button>
+            </div>
+            <div class="speech-to-text">
+                <h1>Speech to Text </h1>
+                <select id="languageSelect">
+                </select>
+                <textarea id="speechToTextInput" placeholder="Your speech will appear here..." readonly></textarea>
+                <div class="controls">
+                    <button id="startButton">START</button>
+                    <button id="stopButton" disabled>STOP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
