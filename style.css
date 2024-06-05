@@ -11,6 +11,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #f0f0f0;
+    padding: 20px;
 }
 
 .container {
@@ -20,24 +21,27 @@ body {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    max-width: 100%;
+    width: 800px;
 }
 
 .form-container {
     display: flex;
     flex-direction: row;
-    width: 800px;
+    width: 100%;
     height: 500px;
+    flex-wrap: wrap;
 }
 
-
 .text-to-speech, .speech-to-text {
-    width: 50%;
+    flex: 1;
     padding: 50px;
     text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .text-to-speech {
@@ -51,8 +55,8 @@ body {
 }
 
 .text-to-speech h1, .speech-to-text h1 {
-    margin-bottom: 50px;
-    font-size: 34px;
+    margin-bottom: 30px;
+    font-size: 28px;
     font-weight: 800;
 }
 
@@ -64,7 +68,6 @@ body {
     border-radius: 5px;
     background: #fff;
     color: #333;
-
 }
 
 .text-to-speech textarea, .speech-to-text textarea {
@@ -75,7 +78,6 @@ body {
     border-radius: 5px;
     resize: none;
     margin-bottom: 20px;
-
 }
 
 .text-to-speech button {
@@ -97,4 +99,43 @@ body {
     cursor: pointer;
     font-weight: bold;
     margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .text-to-speech, .speech-to-text {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .text-to-speech h1, .speech-to-text h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .text-to-speech textarea, .speech-to-text textarea {
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-to-speech h1, .speech-to-text h1 {
+        font-size: 20px;
+    }
+
+    .text-to-speech textarea, .speech-to-text textarea {
+        height: 80px;
+    }
+
+    .text-to-speech button, .controls button {
+        padding: 8px 16px;
+    }
 }
